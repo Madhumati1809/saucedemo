@@ -1,21 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-09T11:05:16 IST" name="Suite" finished-at="2022-08-09T11:05:24 IST" duration-ms="7748">
+  <suite started-at="2022-08-09T16:19:45 IST" name="Default suite" finished-at="2022-08-09T16:20:21 IST" duration-ms="36391">
     <groups>
     </groups>
-    <test started-at="2022-08-09T11:05:16 IST" name="Test" finished-at="2022-08-09T11:05:24 IST" duration-ms="7748">
+    <test started-at="2022-08-09T16:19:45 IST" name="Default test" finished-at="2022-08-09T16:20:21 IST" duration-ms="36391">
       <class name="testcase.SauceLoginPageTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcase.SauceLoginPageTest@74e28667]" started-at="2022-08-09T11:05:16 IST" name="launchBrowser" finished-at="2022-08-09T11:05:23 IST" duration-ms="6880" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:19:46 IST" name="launchBrowser" finished-at="2022-08-09T16:19:52 IST" duration-ms="6309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="Login()[pri:0, instance:testcase.SauceLoginPageTest@74e28667]" started-at="2022-08-09T11:05:23 IST" name="Login" finished-at="2022-08-09T11:05:24 IST" duration-ms="796" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:19:52 IST" name="Login" data-provider="userLoginCredentials" finished-at="2022-08-09T16:19:53 IST" duration-ms="394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[performance_glitc_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:19:53 IST" name="launchBrowser" finished-at="2022-08-09T16:20:00 IST" duration-ms="7356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:20:00 IST" name="Login" data-provider="userLoginCredentials" finished-at="2022-08-09T16:20:00 IST" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[locked_out_use]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:20:00 IST" name="launchBrowser" finished-at="2022-08-09T16:20:10 IST" duration-ms="9512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:20:10 IST" name="Login" data-provider="userLoginCredentials" finished-at="2022-08-09T16:20:10 IST" duration-ms="632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[problm_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:20:10 IST" name="launchBrowser" finished-at="2022-08-09T16:20:21 IST" duration-ms="10263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:20:21 IST" name="Login" data-provider="userLoginCredentials" finished-at="2022-08-09T16:20:21 IST" duration-ms="587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.SauceLoginPageTest@4c60d6e9]" started-at="2022-08-09T16:20:21 IST" name="tearDown" finished-at="2022-08-09T16:20:21 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testcase.SauceLoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
