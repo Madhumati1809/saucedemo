@@ -20,13 +20,12 @@ public class SauceLoginPageTest {
 	@BeforeMethod
 	public void launchBrowser() throws IOException {
 		driver = BaseUtility.setup();
-		
+		loginObj= new SauceLoginPage(driver);
 	}
 
 	@Test(dataProvider = "userLoginCredentials", dataProviderClass = testdata.LoginUsers.class)
 	public void Login(String type,String username,String password) throws InterruptedException {
-		loginObj= new SauceLoginPage(driver);
-		loginObj.login(type,username,password);
+		loginObj.login(type,username,password);	
 	}
 	
 	@AfterTest
