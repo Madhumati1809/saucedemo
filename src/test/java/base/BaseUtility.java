@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import keys.Keys;
+import keys.StaticKeys;
 
 public class BaseUtility {
 
@@ -21,7 +21,7 @@ public class BaseUtility {
 			reader = new FileReader(System.getProperty("user.dir") + "\\src\\test\\java\\config.properties");
 			prop.load(reader);
 		}
-		if (prop.getProperty("browser").equalsIgnoreCase(Keys.CHROME)) {
+		if (prop.getProperty("browser").equalsIgnoreCase(StaticKeys.CHROME)) {
 			WebDriverManager.chromedriver().setup();
 			driver= new ChromeDriver();
 		}
