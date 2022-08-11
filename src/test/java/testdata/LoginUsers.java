@@ -12,14 +12,15 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.DataProvider;
 
+import keys.StaticFileKeys;
 import keys.StaticKeys;
 
 public class LoginUsers {
 
-	@DataProvider(name="userLoginCredentials")
+	@DataProvider(name = "userLoginCredentials")
 	public static String[][] xclDataProvider() throws EncryptedDocumentException, IOException {
 
-		File f = new File(StaticKeys.USER_LOGIN_DATA);
+		File f = new File(StaticFileKeys.USER_LOGIN_DATA);
 		FileInputStream fis = new FileInputStream(f);
 		Workbook wbk = WorkbookFactory.create(fis);
 		Sheet sheet = wbk.getSheet(StaticKeys.SAUCEDEMO);

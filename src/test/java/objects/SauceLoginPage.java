@@ -26,25 +26,23 @@ public class SauceLoginPage {
 	WebElement password;
 	@FindBy(xpath = "//input[@id='login-button']")
 	WebElement loginButton;
-	@FindBy(xpath="//button[@class='error-button']//*[name()='svg']")WebElement cancelErrorMsg;
-	
-
+	@FindBy(xpath = "//button[@class='error-button']//*[name()='svg']")
+	WebElement cancelErrorMsg;
 
 	public void login(String type, String user, String pass) throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(3));
-		
-			username.sendKeys(user);
-			password.sendKeys(pass);
-			loginButton.click();
-			if(type.equalsIgnoreCase("valid")) {
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".title")));
-			}else {
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h3[data-test='error']")));
-				cancelErrorMsg.click();
-				username.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
-				password.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
-			}
-		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+		username.sendKeys(user);
+		password.sendKeys(pass);
+		loginButton.click();
+		if (type.equalsIgnoreCase("valid")) {
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".title")));
+		} else {
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h3[data-test='error']")));
+			cancelErrorMsg.click();
+			username.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+			password.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		}
 
 	}
 }

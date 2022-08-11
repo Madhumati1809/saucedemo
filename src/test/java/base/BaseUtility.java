@@ -23,11 +23,11 @@ public class BaseUtility {
 		}
 		if (prop.getProperty("browser").equalsIgnoreCase(StaticKeys.CHROME)) {
 			WebDriverManager.chromedriver().setup();
-			driver= new ChromeDriver();
+			driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("baseUrl"));
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
 
