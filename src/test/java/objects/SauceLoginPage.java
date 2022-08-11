@@ -1,8 +1,9 @@
-package loginpage;
+package objects;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,6 +40,9 @@ public class SauceLoginPage {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".title")));
 			}else {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h3[data-test='error']")));
+				cancelErrorMsg.click();
+				username.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
+				password.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
 			}
 		
 
