@@ -16,7 +16,7 @@ import org.testng.annotations.DataProvider;
 import keys.StaticFileKeys;
 import keys.StaticKeys;
 
-public class LoginUsers {
+public class Basedata {
 
 	@DataProvider(name = "basedata")
 	public static String[][] xclDataProvider(Method m) throws EncryptedDocumentException, IOException {

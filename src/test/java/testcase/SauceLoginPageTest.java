@@ -34,7 +34,7 @@ public class SauceLoginPageTest {
 		logoutObj = new Logout(driver);
 	}
 
-	@Test(dataProvider = "basedata", dataProviderClass = testdata.LoginUsers.class, priority = 0)
+	@Test(priority = 0, dataProvider = "basedata", dataProviderClass = testdata.Basedata.class)
 	public void Login(String type, String username, String password) throws InterruptedException {
 		loginObj.login(type, username, password);
 	}
@@ -44,9 +44,8 @@ public class SauceLoginPageTest {
 		searchProObj.selectProductByHighToLow();
 	}
 
-	@Test(priority = 2, dataProvider = "basedata", dataProviderClass = testdata.LoginUsers.class)
+	@Test(priority = 2, dataProvider = "basedata", dataProviderClass = testdata.Basedata.class)
 	public void selectProductByName(String product) {
-
 		searchProObj.selectProductByName(product);
 		searchProObj.addCart(product);
 
