@@ -5,10 +5,14 @@
     <classes>
       <class name="testcase.SauceLoginPageTest">
         <methods>
-          <include name="productSearchByHighToLowPrice"/>
           <include name="tearDown"/>
-          <include name="Login" invocation-numbers="3"/>
+          <include name="productSearchByHighToLowPrice"/>
+          <include name="Login"/>
           <include name="launchBrowser"/>
+          <include name="proceedeForPurchase"/>
+          <include name="logout"/>
+          <include name="addProductInCart"/>
+          <include name="selectProductByName"/>
         </methods>
       </class> <!-- testcase.SauceLoginPageTest -->
     </classes>
