@@ -31,10 +31,10 @@ public class SauceLoginPageTest {
 		loginObj = new SauceLoginPage(driver);
 		searchProObj = new SearchProduct(driver);
 		cartObj = new CartPage(driver);
-		logoutObj= new Logout(driver);
+		logoutObj = new Logout(driver);
 	}
 
-	@Test(dataProvider = "userLoginCredentials", dataProviderClass = testdata.LoginUsers.class, priority = 0)
+	@Test(dataProvider = "basedata", dataProviderClass = testdata.LoginUsers.class, priority = 0)
 	public void Login(String type, String username, String password) throws InterruptedException {
 		loginObj.login(type, username, password);
 	}
@@ -44,27 +44,27 @@ public class SauceLoginPageTest {
 		searchProObj.selectProductByHighToLow();
 	}
 
-	@Test(priority = 2)
-	public void selectProductByName() {
-		searchProObj.selectProductByName();
-	}
+	@Test(priority = 2, dataProvider = "basedata", dataProviderClass = testdata.LoginUsers.class)
+	public void selectProductByName(String product) {
 
-	@Test(priority = 3)
-	public void addProductInCart() throws InterruptedException {
-		searchProObj.addCart();
+		searchProObj.selectProductByName(product);
+		searchProObj.addCart(product);
+
 	}
 
 	@Test(priority = 4)
 	public void proceedeForPurchase() {
+		searchProObj.viewCart();
 		cartObj.checkout();
 		cartObj.provideUserData();
-		cartObj.placeOrder();	
+		cartObj.placeOrder();
 	}
 
 	@Test(priority = 5)
-	public void logout(){
+	public void logout() {
 		logoutObj.logout();
 	}
+
 	@AfterTest
 	public void tearDown() {
 		driver.close();

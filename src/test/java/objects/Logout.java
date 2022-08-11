@@ -18,7 +18,6 @@ public class Logout {
 	@FindBy(xpath = "//a[@id='logout_sidebar_link']") WebElement logout;
 	
 	public void logout(){
-		
 		menu.click();
 		logout.click();
 	}

@@ -3,6 +3,7 @@ package testdata;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -17,13 +18,16 @@ import keys.StaticKeys;
 
 public class LoginUsers {
 
-	@DataProvider(name = "userLoginCredentials")
-	public static String[][] xclDataProvider() throws EncryptedDocumentException, IOException {
+	@DataProvider(name = "basedata")
+	public static String[][] xclDataProvider(Method m) throws EncryptedDocumentException, IOException {
 
+		String sheetName = m.getName();
+		
 		File f = new File(StaticFileKeys.USER_LOGIN_DATA);
 		FileInputStream fis = new FileInputStream(f);
 		Workbook wbk = WorkbookFactory.create(fis);
-		Sheet sheet = wbk.getSheet(StaticKeys.SAUCEDEMO);
+
+		Sheet sheet = wbk.getSheet(sheetName);
 		int totalRows = sheet.getLastRowNum();
 		Row row = sheet.getRow(0);
 		int totalCells = row.getLastCellNum();
