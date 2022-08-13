@@ -14,9 +14,15 @@ public class Logout {
 		PageFactory.initElements(driver, this);
 	}
 	
+	/**
+	 * Web Elements
+	 */	
 	@FindBy(xpath="//button[@id='react-burger-menu-btn']") WebElement menu;
 	@FindBy(xpath = "//a[@id='logout_sidebar_link']") WebElement logout;
 	
+	/**
+     * Page Methods
+     */
 	public void logout(){
 		menu.click();
 		logout.click();

@@ -16,6 +16,10 @@ public class CartPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Web Elements
+	 */	
+	
 	@FindBy(xpath = "//button[@id='checkout']")
 	WebElement checkout;
 	@FindBy(xpath = "//input[@id='first-name']")
@@ -30,6 +34,10 @@ public class CartPage {
 	WebElement finish;
 	@FindBy(xpath = "//button[@id='back-to-products']") WebElement backToHome;
 
+	
+	/**
+     * Page Methods
+     */
 	public void checkout() {
 		checkout.click();
 	}

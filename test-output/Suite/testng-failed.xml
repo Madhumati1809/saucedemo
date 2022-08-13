@@ -6,8 +6,8 @@
       <class name="testcase.SauceLoginPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="Login" invocation-numbers="0"/>
           <include name="launchBrowser"/>
-          <include name="selectProductByName" invocation-numbers="1"/>
         </methods>
       </class> <!-- testcase.SauceLoginPageTest -->
     </classes>

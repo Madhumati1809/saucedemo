@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testcase.SauceLoginPageTest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="testcase.SauceLoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Login" invocation-numbers="0 1"/>
+          <include name="launchBrowser"/>
+          <include name="proceedeForPurchase"/>
+          <include name="logout"/>
+          <include name="selectProductByName" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testcase.SauceLoginPageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [testcase.SauceLoginPageTest] -->

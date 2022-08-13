@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-testcase_SauceLoginPageTest" class="navigator-link">
+              <span class="suite-name border-failed">testcase.SauceLoginPageTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-testcase_SauceLoginPageTest" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-testcase_SauceLoginPageTest" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-testcase_SauceLoginPageTest" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-testcase_SauceLoginPageTest" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-testcase_SauceLoginPageTest" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-testcase_SauceLoginPageTest" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-testcase_SauceLoginPageTest" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-testcase_SauceLoginPageTest" class="hide-methods failed suite-testcase_SauceLoginPageTest"> (hide)</a> <!-- hide-methods failed suite-testcase_SauceLoginPageTest -->
+                      <a href="#" panel-name="suite-testcase_SauceLoginPageTest" class="show-methods failed suite-testcase_SauceLoginPageTest"> (show)</a> <!-- show-methods failed suite-testcase_SauceLoginPageTest -->
+                    </span>
+                    <div class="method-list-content failed suite-testcase_SauceLoginPageTest">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcase_SauceLoginPageTest" title="testcase.SauceLoginPageTest" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-testcase_SauceLoginPageTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-testcase_SauceLoginPageTest" class="hide-methods passed suite-testcase_SauceLoginPageTest"> (hide)</a> <!-- hide-methods passed suite-testcase_SauceLoginPageTest -->
+                      <a href="#" panel-name="suite-testcase_SauceLoginPageTest" class="show-methods passed suite-testcase_SauceLoginPageTest"> (show)</a> <!-- show-methods passed suite-testcase_SauceLoginPageTest -->
+                    </span>
+                    <div class="method-list-content passed suite-testcase_SauceLoginPageTest">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcase_SauceLoginPageTest" title="testcase.SauceLoginPageTest" class="method navigator-link" hash-for-method="Login(invalid, standard, secret_sauce)">Login(invalid, standard, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcase_SauceLoginPageTest" title="testcase.SauceLoginPageTest" class="method navigator-link" hash-for-method="Login(valid, standard_user, secret_sauce)">Login(valid, standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcase_SauceLoginPageTest" title="testcase.SauceLoginPageTest" class="method navigator-link" hash-for-method="proceedeForPurchase">proceedeForPurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcase_SauceLoginPageTest" title="testcase.SauceLoginPageTest" class="method navigator-link" hash-for-method="productSearchByHighToLowPrice">productSearchByHighToLowPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcase_SauceLoginPageTest" title="testcase.SauceLoginPageTest" class="method navigator-link" hash-for-method="selectProductByName(Sauce Labs Backpack)">selectProductByName(Sauce Labs Backpack)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcase_SauceLoginPageTest" title="testcase.SauceLoginPageTest" class="method navigator-link" hash-for-method="selectProductByName(Sauce Labs Fleece Jacket)">selectProductByName(Sauce Labs Fleece Jacket)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-testcase_SauceLoginPageTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-testcase_SauceLoginPageTest" class="panel testcase_SauceLoginPageTest">
+          <div class="suite-testcase_SauceLoginPageTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcase.SauceLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-9HVER1J&apos;, ip: &apos;172.20.10.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [129e3bd94a8b8d9969fb685e51fa8d28, clickElement {id=1ff52bd6-c3c7-4117-8410-644f75d8dfc0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62748}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62748/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (129e3bd94a8b8d9969fb685e51fa8d28)] -&gt; xpath: //a[@id=&apos;logout_sidebar_link&apos;]]
+Session ID: 129e3bd94a8b8d9969fb685e51fa8d28
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at objects.Logout.logout(Logout.java:22)
+	at testcase.SauceLoginPageTest.logout(SauceLoginPageTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 44 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testcase_SauceLoginPageTest-class-failed -->
+          <div class="suite-testcase_SauceLoginPageTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.SauceLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(invalid, standard, secret_sauce)">
+                  </a> <!-- Login(invalid, standard, secret_sauce) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(invalid,standard,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(valid, standard_user, secret_sauce)">
+                  </a> <!-- Login(valid, standard_user, secret_sauce) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(valid,standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="proceedeForPurchase">
+                  </a> <!-- proceedeForPurchase -->
+                  <span class="method-name">proceedeForPurchase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productSearchByHighToLowPrice">
+                  </a> <!-- productSearchByHighToLowPrice -->
+                  <span class="method-name">productSearchByHighToLowPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectProductByName(Sauce Labs Backpack)">
+                  </a> <!-- selectProductByName(Sauce Labs Backpack) -->
+                  <span class="method-name">selectProductByName</span>
+                  <span class="parameters">(Sauce Labs Backpack)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectProductByName(Sauce Labs Fleece Jacket)">
+                  </a> <!-- selectProductByName(Sauce Labs Fleece Jacket) -->
+                  <span class="method-name">selectProductByName</span>
+                  <span class="parameters">(Sauce Labs Fleece Jacket)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testcase_SauceLoginPageTest-class-passed -->
+        </div> <!-- panel testcase_SauceLoginPageTest -->
+        <div panel-name="test-xml-testcase_SauceLoginPageTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;testcase.SauceLoginPageTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.SauceLoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- testcase.SauceLoginPageTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-testcase_SauceLoginPageTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for testcase.SauceLoginPageTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-testcase_SauceLoginPageTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for testcase.SauceLoginPageTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-testcase_SauceLoginPageTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for testcase.SauceLoginPageTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_testcase_SauceLoginPageTest');
+function tableData_testcase_SauceLoginPageTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'logout')
+data.setCell(0, 2, 'testcase.SauceLoginPageTest')
+data.setCell(0, 3, 10210);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'proceedeForPurchase')
+data.setCell(1, 2, 'testcase.SauceLoginPageTest')
+data.setCell(1, 3, 724);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Login')
+data.setCell(2, 2, 'testcase.SauceLoginPageTest')
+data.setCell(2, 3, 491);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Login')
+data.setCell(3, 2, 'testcase.SauceLoginPageTest')
+data.setCell(3, 3, 408);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'selectProductByName')
+data.setCell(4, 2, 'testcase.SauceLoginPageTest')
+data.setCell(4, 3, 308);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'selectProductByName')
+data.setCell(5, 2, 'testcase.SauceLoginPageTest')
+data.setCell(5, 3, 189);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'productSearchByHighToLowPrice')
+data.setCell(6, 2, 'testcase.SauceLoginPageTest')
+data.setCell(6, 3, 144);
+window.suiteTableData['testcase_SauceLoginPageTest']= { tableData: data, tableDiv: 'times-div-testcase_SauceLoginPageTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-testcase_SauceLoginPageTest">
+              </div> <!-- times-div-testcase_SauceLoginPageTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-testcase_SauceLoginPageTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for testcase.SauceLoginPageTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-testcase_SauceLoginPageTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-testcase_SauceLoginPageTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.SauceLoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Login(invalid, standard, secret_sauce)</span>
+                <span class="method-start">6705 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=Login status=SUCCESS method=SauceLoginPageTest.Login(java.lang.String,java.lang.Str...)</span>
+                <span class="method-start">7198 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Login(valid, standard_user, secret_sauce)</span>
+                <span class="method-start">7451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=Login status=SUCCESS method=SauceLoginPageTest.Login(java.lang.String,java.lang.Str...)</span>
+                <span class="method-start">7859 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">productSearchByHighToLowPrice</span>
+                <span class="method-start">8734 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=productSearchByHighToLowPrice status=SUCCESS method=SauceLoginPageTest.productSearc...)</span>
+                <span class="method-start">8879 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">selectProductByName(Sauce Labs Backpack)</span>
+                <span class="method-start">9376 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=selectProductByName status=SUCCESS method=SauceLoginPageTest.selectProductByName(ja...)</span>
+                <span class="method-start">9685 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">selectProductByName(Sauce Labs Fleece Jacket)</span>
+                <span class="method-start">10123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=selectProductByName status=SUCCESS method=SauceLoginPageTest.selectProductByName(ja...)</span>
+                <span class="method-start">10313 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">proceedeForPurchase</span>
+                <span class="method-start">10720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=proceedeForPurchase status=SUCCESS method=SauceLoginPageTest.proceedeForPurchase()[...)</span>
+                <span class="method-start">11445 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logout</span>
+                <span class="method-start">11875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=logout status=FAILURE method=SauceLoginPageTest.logout()[pri:4, instance:testcase.S...)</span>
+                <span class="method-start">22103 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22648 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

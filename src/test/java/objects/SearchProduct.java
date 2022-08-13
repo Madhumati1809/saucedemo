@@ -1,7 +1,5 @@
 package objects;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import keys.StaticKeys;
+
 
 public class SearchProduct {
 
@@ -20,9 +19,11 @@ public class SearchProduct {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Web Elements
+	 */	
 	@FindBy(xpath = "//select[@class='product_sort_container']")
 	WebElement selectByOptions;
-
 	
 	@FindBy(xpath = "//div[@class=\"inventory_item_label\"]/a")
 	WebElement selectProductByName;
@@ -36,6 +37,9 @@ public class SearchProduct {
 	@FindBy(xpath = "//button[@id='back-to-products']")
 	WebElement backToProducts;
 
+	/**
+     * Page Methods
+     */
 	public void selectProductByHighToLow() {
 		Select select = new Select(selectByOptions);
 		select.selectByValue(StaticKeys.SELECT_BY_HIGH_TO_LOW);
